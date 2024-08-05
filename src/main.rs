@@ -10,10 +10,6 @@ fn main() {
 
 #[derive(Component)]
 struct Player {
-    move_up: KeyCode,
-    move_down: KeyCode,
-    move_left: KeyCode,
-    move_right: KeyCode
 }
 
 fn setup(mut commands: Commands) {
@@ -39,10 +35,6 @@ fn setup(mut commands: Commands) {
             ..default()
         }, 
         Player {
-            move_up: KeyCode::ArrowUp,
-            move_down: KeyCode::ArrowDown,
-            move_left: KeyCode::ArrowLeft,
-            move_right: KeyCode::ArrowRight
         }
     ));
 }
